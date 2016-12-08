@@ -7,6 +7,7 @@ setup(
     license='Simplified BSD',
 
     install_requires=[
+        'django-modeltranslation',
         'Mezzanine >= 3.1.10',
         'six >= 1.5.2'],
 
