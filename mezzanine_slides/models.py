@@ -21,7 +21,7 @@ class Slide(Orderable):
     """
     page = models.ForeignKey(Page)
     file = FileField(_('File'), max_length=200, upload_to='slides', format='Image')
-    description = models.CharField(_('Description'), blank=True, max_length=200)
+    description = models.TextField(_('Description'), blank=True)
     caption = models.CharField(_('Caption'), blank=True, max_length=200)
     site = models.ForeignKey(Site)
 
